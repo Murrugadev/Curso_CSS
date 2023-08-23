@@ -203,3 +203,75 @@ section h2, h3{
     text-shadow: 3px 2px 5px blue;
 }
 
+/* Este orden es una convención si que si se quiere eliminar un seleccionador hay que seguir la secuencia  */
+/* Cuando el link no ha sido visitado */
+a:link{
+    color: blue;
+}
+
+/* cuando el link ha sido visitado */
+a:visited{
+    color: blueviolet;
+}
+
+/* Cuando el cursor del mouse esta encima del link  */
+a:hover{
+    color: pink;
+}
+
+/* Cuando el link se esta oprimiendo el link   */
+a:active{
+    color: darkcyan;
+}
+
+#lista_no_ordenada1{
+    background-color: gray;
+    list-style-type: none;
+    /* El Padding del lado izquierdo de la lista es de 40px por defecto */
+    padding-left: 0;
+}
+
+#tabla1{
+    /* Espacios entre celdas */
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+th {
+    background-color: lightgreen;
+    color: white;
+    text-align: left;
+}
+
+/* eve= par 
+odd=impar */
+tr:nth-child(even){
+    background-color: lightblue;
+}
+
+tr:hover{
+    background-color: #aaa;
+    /* Cambia el tipo de cursor de flecha a mano cuando se pasa el mismo por el elemento */
+    cursor: pointer;
+}
+
+/* nota: por defecto las etiquetas de div o section dan un salto de linea a diferencia se los span  */
+span{
+    /* fuerza al elemento a dar saltos de linea  */
+    display: block;
+    background-color: #ee0000;
+    /* max-width= Hace que se pueda redimencionar el contenido del elemento con el tamaño en el que se encuentre la ventana del navegador */
+    max-width: 100%;
+}
+
+div{
+    /* display: inline= Fuerza al elemento a seguir dentro de la misma linea   */
+    /* nota: Las etiquetas de html que vienen con por defecto son: los spam, las img y las anchortag */
+    display: inline;
+    /* display: none= Oculta el elemento dentro de una linea , pero sigue existiendo dentro de la pagina web */
+    /* display: none;*/
+}
