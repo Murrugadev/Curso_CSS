@@ -1,0 +1,205 @@
+/*toda la etiqueta de body*/
+body {
+    color: seagreen;
+}
+
+/*Se puede llamar tanto a la etiqueta como al id de la etiqueta o la clase que tenga asignadas varias etiquetas según sea el caso */
+
+h1 {
+    color: blueviolet;
+}
+
+/*# = llamar al id de la etiqueta */
+#titulo {
+    color: brown;
+}
+
+/*. = clases */
+.texto {
+    color: cadetblue;
+}
+
+/*Cuando se tiene mas de una clase dentro de la misma etiqueta, se puede especificar cuál es la clase que se va a modificar con la etiqueta y la clase*/
+p.texto1 {
+    color: blue;
+}
+
+/* nota: Siempre cuando se tiene una etiqueta co mas de una clase siempre se va a aplicar el último estilo que se creo en secuencia de modificación del archivo de CSS */
+/*En este caso toma los párrafos que estén en dicha sección*/
+section p {
+    color: coral;
+}
+
+/*Otro ejemplo*/
+/*Se pueden llamar a varias etiquetas con ","*/
+section h2, h3{
+    color: crimson;
+}
+
+/* *= Selecciona todo el contenido de la pagina web */
+/*Nota: El selector "*" o selector universal solo cambia las propiedades que no se hayan definido previamente en el código */
+*{
+    /*font-size= tamaño de fuente
+      px= pixeles*/
+    font-size: 24px;
+}
+
+#titulo2{
+    /*Convención de color 1*/
+    /*RBG hexadecimal con convención de 3 dígitos*/
+    color: #f00;
+}
+
+#titulo3{
+    /*Convención de color 2*/
+    /*RBG hexadecimal con convención de 6 dígitos
+    En este caso: 2 dígitos= R, 2 dígitos= G, 2 dígitos= B */
+    color: #ee0000;
+}
+#titulo4{
+    /*Convención de color 3*/
+    /*RBG hexadecimal con convención de 6 dígitos
+    En este caso: 2 dígitos= R, 2 dígitos= G, 2 dígitos= B */
+    color: rgb(0,255,255);
+}
+
+.texto{
+    /*estilos de bordes:
+     border = bordes 
+     deshed= linea punteada
+     solid = linea recta
+     dotted = lineas con bordes 
+     double 
+     groove
+     ridge
+     inset
+     outset
+     none
+     hidden*/
+    /* border: 5px red outset; */
+    border-style: solid;
+    border-color: cadetblue;
+    /* bordes redondeados */
+    border-radius: 5px;
+    /* Ancho del borde */
+    /* medidas: cm
+                mm
+                px
+                in = pulgadas
+                pt=puntos=1/72 de in
+                pc=picas=12 puntos
+                em= medida relativa al tamaño de la fuente del elemento
+                1em= al tamaño del elemento
+                rem= Relaciona con el tamaño de fuente de la raíz del elemento de HTML, que por defecto es de 16px*/
+    border-width: 5px;
+}
+
+#articulo1 {
+    /* Da un color al fond del elemento */
+    /* rgba= con opacidad o transparencia  */
+    background-color: rgba(0,0,0,0.3);
+}
+
+#subtitulo1{
+    /* a diferencia de rgb, definir la propiedad de opacidad de manera independiente esta da opacidad a todo el elemento */
+    background-color: rgb(0,255,255);
+    opacity: 0.3;
+}
+
+/* Llamar la clase o id de una parte de la página web y un elemento que esta dentro de este */
+.articulo2 h1 {
+    color: beige;
+    /* En este caso no se le esta dando un fondo  a la imagen */
+    background-image: url('coffee.png');
+    height: 200px;
+    /* auto = tamaño de la imagen por defecto
+    cover = Ajusta el tamaño de la imagen con las dimensiones de forma dinámica 
+    contain= contiene la imagen en las dimensiones previamente establecidas
+    _n_px _n_px= para definir la altura y el ancho de la imagen
+    nota: Para que haga efecto la opción anterior se debe definir la misma medida en la propiedad de altura previamente establecida */
+    background-size: 200px 200px;
+    /* no-repeat= Para que no se repita la imagen al bajar mucho la dimensión de la imagen 
+       repeat-x= repite la imagen en el eje horizontal
+       repeat-y= repite la imagen en el eje vertical*/
+    background-repeat: no-repeat;
+    /* Posiciones de imagen (primera posición eje horizontal):
+    right
+    left
+    center
+    (segunda posición eje vertical):display:
+    top (arriba)
+    center
+    bottom (abajo) */
+    /* Nota: También se le pueden agregar medidas a "background-position" para ajustar la imagen en el eje */
+    background-position: left center;
+}
+
+#articulo3 {
+    height: 200px;
+    /* en este caso se le está dando un fondo  */
+    background: beige url('monster.png') no-repeat center center;
+    /* nota: en este caso las dimensiones se tienen que definir luego del "background" para que este las tome */
+    background-size: 200px 200px;
+}
+
+.Margenes{
+    background-color: cadetblue;
+    /* margin= margenes por fuera del elemento
+    nota: Primera posición= Margen top (arriba)
+          Segunda posición= Margen right  
+          Tercera posición= Margen bottom (abajo)
+          Cuarta posición= Margen de la left  */
+    /* nota: En este caso el margen está fuera del titulo o elemento */
+    /* nota: Si se deja una sola posición en los margenes este toma esa unica medida para todos sus margenes al igual que padding y border */
+    /* margin: 15px;
+       padding: 15px;
+       border: 15px;  
+       nota: Si de define la propiedad con dos valores este los toma en cuenta como eje vertical y el eje horizontal */
+       /* margin: 15px 20px;
+       padding: 15px 20px;
+       border: 15px 20px; */
+       /*nota: Si de define la propiedad con tres valores este los toma en cuenta como top (arriba), el eje horizontal y bottom(abajo) */
+       /* margin: 15px 20px 5px;
+       padding: 15px 20px 5px;
+       border: 15px 20px; 5px*/
+    margin: 15px 20px 25px 30px;
+    /* padding= margenes entre el elemento y el margin  */
+    padding: 30px 25px 20px 15px ;
+    /* border= Borde que se sitúa entre el margin y el padding   */
+    border: 1px solid black;
+    /* height= altura */
+    height: 100px;
+    /* width= ancho */
+    width: 50px;
+    /* overflow= Cambia la visibilidad del contenido que se sale de los margenes 
+    hidden= Oculta el contenido que sale de los margenes
+    visible= Hace visible el contenido que se sale de los margenes 
+    scroll= hace que el contenido se mueva mediante un scroll para que no se salga de los margenes  */
+    overflow: scroll;
+    /* outline= es una linea o borde que esta entre el "border" y el "margin" */
+    outline: 2px solid orange;
+}
+/* nota: el boxmodel es como se posiciona el contenido html dentro de la página web  */
+
+#t1{
+    /* font-family= tipo de fuente  */
+    /* nota: si no puede cargar una de las fuente intenta con la siguiente */
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: 'Roboto', sans-serif ;
+    /* text-align= Alinea el texto
+    justify = utiliza todo el ancho que tiene disponible para textos muy grandes (desde la izquierda)
+    right 
+    left  */
+    text-align: center;
+    /* text-decoration= decoración de texto
+    underline= subrayado 
+    line-through= Para tachar 
+    overline= Encima de la linea */
+    text-decoration: line-through;
+    /* text-shadow= Sombreado 
+    Primera posición = cuanto de va a mover la sombra hacia la derecha 
+    Segunda posición = cuanto se va a mover la sombra hacia abajo 
+    Tercera posición = difuminado de la sombra  */
+    text-shadow: 3px 2px 5px blue;
+}
+
