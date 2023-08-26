@@ -263,15 +263,47 @@ tr:hover{
 span{
     /* fuerza al elemento a dar saltos de linea  */
     display: block;
-    background-color: #ee0000;
+    background-color: violet;
     /* max-width= Hace que se pueda redimencionar el contenido del elemento con el tamaño en el que se encuentre la ventana del navegador */
-    max-width: 100%;
+    max-width: 600px;
 }
 
 div{
     /* display: inline= Fuerza al elemento a seguir dentro de la misma linea   */
     /* nota: Las etiquetas de html que vienen con por defecto son: los spam, las img y las anchortag */
-    display: inline;
     /* display: none= Oculta el elemento dentro de una linea , pero sigue existiendo dentro de la pagina web */
     /* display: none;*/
+    /* display:inline-block= Con esta propiedad se le pude dar medidas con width y con height al elemento */
+    /* Nota: solo se puede dar dimensiones a "inline-block" */
+    display: inline;
+}
+
+#aposición{
+    /* posición = posiciones de los elementos de html
+        relative = da una posición  relativa al elemento
+        fixed = Posiciona el elemento con respecto a lo que se está viendo en el navegador (son los que se mueven con la página cuando se hace scroll down ) 
+        absolute = Se posiciona relativamente a la etiqueta padre html mas cercana que este elemento tenga 
+        sticky = Es una mezcla ente relative y fixed dependiendo del contexto */
+        position: relative ;
+    /* left = Da un espacio de izquierda a derecha
+       right = Da un espacio de derecha a izquierda
+       top = Da un espacio de arriba a abajo 
+       bottom = Da un espacio de abajo hacia arriba */
+       left: 20px;
+}
+
+.articulo_flotanteocontainerizq{
+    /* float = Hace que el elemento flote en una posición */
+    float: right;
+}
+
+.texto13{
+    /* Centrar un elemento y texto  */
+    /* Centrar texto */
+    text-align: center;
+    /* Centrar elemento  */
+    /* Centrado vertical  */
+    padding: 50px 0;
+    width: 200px;
+    margin: 0 auto;
 }
