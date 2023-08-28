@@ -16,7 +16,7 @@ h1 {
 
 /*. = clases */
 .texto {
-    color: cadetblue;
+    color:aquamarine;
 }
 
 /*Cuando se tiene mas de una clase dentro de la misma etiqueta, se puede especificar cuál es la clase que se va a modificar con la etiqueta y la clase*/
