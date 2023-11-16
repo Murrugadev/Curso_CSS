@@ -1,0 +1,68 @@
+Sintaxis:
+
+ h1 (selector) {[color(property):blue(value)](declaration);[font-size(property):12px(value)](declaration);}
+
+Ejemplo: 
+
+ p {
+  color: red;
+  text-align: center;
+}
+_______________________________________________________________________
+
+- Selector de elementos:
+
+p {
+  text-align: center;
+  color: red;
+}
+
+Nota: Selecciona los elementos HTML según el nombre del elemento. 
+
+_______________________________________________________________________
+
+
+- Selector id: 
+
+#para1 {
+  text-align: center;
+  color: red;
+}
+
+
+Nota: utiliza el tributo de identificación de un elemento HTML para seleccionar un elemento en específico. 
+_______________________________________________________________________
+
+- Selector de clases: 
+
+.center {
+  text-align: center;
+  color: red;
+}
+
+Nota: Selecciona elementos HTML con un atributo de clase específico. 
+-----------------------------------------------------------------------
+
+p.center {
+  text-align: center;
+  color: red;
+}
+
+Nota: En este ejemplo solo los elementos con la etiqueta 
+-----------------------------------------------------------------------
+
+<p class="center large">This paragraph refers to two classes.</p>
+
+Nota: en este ejemplo, el estilo del elemento <p> se ajustara a "class= center" y "class=large".
+_______________________________________________________________________
+
+- Selector universal: 
+
+* {
+  text-align: center;
+  color: blue;
+}
+
+Nota: Selecciona todos los elementos HTML de la pagina.
+
+
